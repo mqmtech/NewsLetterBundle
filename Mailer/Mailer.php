@@ -53,7 +53,7 @@ class Mailer implements MailerInterface
         mail($to, $subject, $body, $messageHeaders);
     }
 
-    public function getDefaultOptions()
+    public function getDefaultOptions(array $options)
     {
         return array(
             'Content-Type' => 'text/html',
